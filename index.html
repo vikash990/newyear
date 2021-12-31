@@ -1,0 +1,108 @@
+<html>
+
+<head>
+  <title>New year 2022</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .para {
+      color: white;
+      font-size: 300%;
+      text-align: center;
+      font-family: monospace;
+      font-size-adjust: auto;
+      margin-bottom: 200px;
+    }
+
+    .par {
+      color: white;
+      font-size: 100%;
+      text-align: center;
+      font-family: monospace;
+      font-size-adjust: auto;
+      margin-top: 100px;
+    }
+
+    body {
+      background-image: url('keep.gif');
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    #main {
+      display: flex;
+      flex-direction: column;
+      height: 900px;
+      justify-content: space-around;
+      margin-left: 400px;
+    }
+    @media screen and (min-width: 480px) {
+  #main {
+      height: 300px;
+      justify-content: space-around;
+      margin-left: 60px;
+      font-size: 30px;
+  }
+}
+    .heart {
+      position: absolute;
+      left: 100px;
+      top: 50px;
+      width: 100px;
+      height: 90px;
+      margin-top: 300px;
+      margin-left: 600px;
+      animation: animateHeart 1.2s infinite;
+    }
+
+    .heart:before,
+    .heart:after {
+      position: absolute;
+      content: "";
+      left: 50px;
+      top: 0;
+      width: 50%;
+      height: 80%;
+      background: red;
+      border-radius: 50px 50px 0 0;
+      transform: rotate(-45deg);
+      transform-origin: 0 100%;
+    }
+
+    .heart:after {
+      left: 0;
+      transform: rotate(45deg);
+      transform-origin: 100% 100%;
+    }
+    @media screen and (min-width: 480px) {
+  .heart {
+    position: absolute;
+     margin:200px 200px;
+      animation: animateHeart 1.2s infinite;
+  }
+}
+.name{
+  color: white;
+  font-size: 30px;
+  height:100px;
+  margin-top: 300px ;
+  margin-left: 200px;
+}
+  </style>
+</head>
+
+<body>
+  <h1 class="para">HAPPY NEW YEAR 2022</h1>
+  
+  <div id="main">
+    <div class="heart"></div>
+    <h1 class="name">Vikash Dubey</h1>
+    <p class="par">HOPE THIS YEAR WILL GIVE YOU ALL HAPPINESS AND GOOD HEALTH</p>
+   
+  </div>
+</body>
+
+</html>
